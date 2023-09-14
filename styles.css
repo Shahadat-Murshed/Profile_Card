@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.profile_card {
+  width: 400px;
+  height: 500px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px 40px;
+  border-radius: 20px;
+  background-color: black;
+  position: relative;
+  box-shadow: 0 0 40px -8px gray;
+}
+
+.user_img img {
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.user_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0px;
+}
+
+.outer-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h5 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin: 12px 0;
+}
+
+.inner-heading {
+  border: 1px transparent;
+  height: 20px;
+  line-height: 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.inner-heading span {
+  position: relative;
+  color: gray;
+  font-weight: 600;
+  font-size: 15px;
+  animation: ani 12s infinite;
+}
+
+@keyframes ani {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: -15px;
+  }
+  45% {
+    top: -35px;
+  }
+  70% {
+    top: -52px;
+  }
+  95% {
+    top: -70px;
+  }
+}
+
+.user_details a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  margin: 14px 0;
+  background-color: crimson;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 2px 2px crimson;
+  transition: 1000ms ease-in-out;
+}
+
+.user_details a:hover {
+  background: transparent;
+}
+
+.social_media_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_media_icons li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+}
+
+.social_media_icons li a {
+  height: 60px;
+  width: 60px;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.social_media_icons li span {
+  color: gray;
+  font-weight: 600;
+  font-size: 10px;
+}
